@@ -20,7 +20,7 @@ public class SpringSecurityConfiguration {
                 .antMatchers("/web").permitAll()
                 .anyRequest().authenticated()
                 .and().httpBasic();
-
+//
         return httpSecurity.build();
     }
 
